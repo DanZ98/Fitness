@@ -1,10 +1,9 @@
-@import "mod.css";
-
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -12,44 +11,219 @@ html {
 }
 
 .clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
 
-
-#container{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    
-  
-}
-
-.box{
-    background-color: red;
-    min-height: 200px;
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
+header{
+  background: url(../images/header-background) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#fd634e;
+  height: 100vh;
 }
 
 
-/* @media only screen and (max-width: 1222px) {
-    #container{
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+
+/* Logo and Navigation */
+
+.nav-container{
+  padding-top: 50px;
+}
+
+.nav-container .logo{
+  float: left;
+  margin-left: 45px;
+}
+
+.nav-container .logo:hover{
+  opacity: .6;
+  cursor: pointer;
+}
+
+.nav-container .logo .logo-fitness{
+  vertical-align: top;
+  font-family: Din, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-container .logo .logo-fitness:after{
+  content: "";
+  display: block;
+  text-align: left;
+  width: 37px;
+  padding-top: 0px;
+  border-bottom: 3px solid #a2ca28;
+  position: relative;
+  left: 36px;
+  bottom: 25px;
+}
+
+.nav-container .nav-items{
+  float: right;
+  margin: 20px 35px 0 0;
+}
+
+.nav-items nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-items nav ul li{
+  font-family: sans-serif;
+  cursor: pointer;
+  color: #fff;
+  margin: 0 30px;
+  font-size: 13px;
+}
+
+.nav-items nav ul li:hover{
+  color: #fd634e;
+}
+
+
+
+
+/* Hamburger menu */
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  display: none;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu{
+  z-index:1000000; 
+  font-weight:bold; 
+  font-size:0.8em; 
+  width:100%; 
+  background:#f1f1f1;  
+  position:absolute; 
+  text-align:center; 
+  font-size:12px;
+  left:0;
+}
+
+.menu ul {
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  list-style-image: none;
+}
+
+.menu li {
+  display: block;   
+  padding:15px 0 15px 0; 
+  border-bottom:#dddddd 1px solid;
+  color: #fd634e;
+  font-family: Din, sans-serif;
+}
+
+.menu li:hover{
+  display: block;    
+  background:#ffffff; 
+  padding:15px 0 15px 0; 
+  border-bottom:#dddddd 1px solid;
+}
+
+.menu ul li a { 
+  text-decoration:none;  
+  margin: 0px; 
+  color:#fd634e;
+}
+
+.menu ul li a:hover {  
+  color: #666; 
+  text-decoration:none;
+}
+
+.menu a{
+  text-decoration:none; 
+  color:#666;
+}
+
+.menu a:hover{
+  text-decoration:none; 
+  color:#666;
+}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+
+
+/* Responsive Layout */
+
+  @media only screen and (min-width: 865px) {
+    .hamburger, .cross, .menu{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 865px) {
+    .nav-items .ul-container{
+        display: none;
+    }
+
+    .hamburger{
+      display: block;
+      position: absolute;
+      top: 35px;
+      font-size: 2em;
+      color: #fff;
+      right: 25px;
+    }
+
+    .menu{
+      position: absolute;
+      top: 0;
     }
 }
 
-@media only screen and (max-width: 765px) {
-
-} */
