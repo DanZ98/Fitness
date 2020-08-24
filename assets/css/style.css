@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 /* Default CSS Settings */
 
@@ -44,6 +43,7 @@ header{
   background-color:#fd634e;
   height: 100vh;
   position: relative;
+  background-attachment: scroll;
 }
 
 
@@ -265,11 +265,24 @@ header #fitness-header #fitness-header-slash-red{
   padding-top: 110px;
 }
 
+#services .flex-container-services-info:nth-child(3){
+  margin-top: 0;
+}
+
+#services .flex-container-services-info:nth-child(3) .fitness-service{
+  order: 2;
+}
+
+#services .flex-container-services-info:nth-child(3) .fitness-service-img{
+  order: 1;
+}
+
 #services .service-items{
   flex: 0 37%;
   padding-right: 40px;
   color: #fff;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 #services .service-items:nth-child(4){
@@ -308,66 +321,415 @@ header #fitness-header #fitness-header-slash-red{
 #services .flex-container-services-info{
   display: flex;
   margin-top: 120px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#services .flex-container-services-info .fitness-first{
+#services .flex-container-services-info .fitness-service{
   padding: 60px 40px 70px 40px;
   height: auto;
   text-align: center;
   line-height: 24px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   background-color: #fff;
 }
 
-#services .flex-container-services-info .fitness-first h3{
+#services .flex-container-services-info .fitness-service h3{
   margin-bottom: 8px;
   color: #fd634e;
   line-height: normal;
 }
 
-#services .flex-container-services-info .fitness-first h4{
+#services .flex-container-services-info .fitness-service h4{
   margin-bottom: 22px;
   font-size: 29px;
-  font-family: Robot, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #a2ca28;
 }
 
-#services .flex-container-services-info .fitness-first p{
+#services .flex-container-services-info .fitness-service p{
   margin-top: 15px;
   color: #656e74;
   font-size: 14px;
 }
 
-#services .flex-container-services-info .fitness-first a{
+#services .flex-container-services-info .fitness-service a{
   color: #a2ca28;
+  font-family: 'Open Sans';
+  font-weight: 400;
 }
 
-#services .flex-container-services-info .fitness-first-img{
+#services .flex-container-services-info .fitness-service-img{
   position: relative;
 }
 
-#services .flex-container-services-info .fitness-first-img img{
+#services .flex-container-services-info .fitness-service-img img{
   display: block;
 }
 
-#services .flex-container-services-info .fitness-first-img p{
+#services .flex-container-services-info .fitness-service-img p{
   position: absolute;
   bottom: 45px;
   right: 75px;
   color: #fd634e;
 }
 
-#services .flex-container-services-info .fitness-first-img #users{
+#services .flex-container-services-info:nth-child(3) .fitness-service-img img:nth-child(3){
+  position: absolute;
+  left: 193px;
+} 
+
+#services .flex-container-services-info .fitness-service-img #users{
   color: #fff;
 }
 
-#services .flex-container-services-info .fitness-first-img img:nth-child(3){
+#services .flex-container-services-info .fitness-service-img img:nth-child(3){
   position: absolute;
   bottom: 42px;
   right: 45px;
 }
+
+ #services .flex-container-services-info:nth-child(3) .fitness-service-img p{
+  position: absolute;
+  left: 45px; 
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: 400;
+} 
+
+#services .flex-container-services-info:nth-child(4){
+  margin-top: 0;
+}
+
+#services .flex-container-services-info:nth-child(4){
+  margin-top: 0;
+}
+
+#services .flex-container-services-info:nth-child(4) .fitness-service {
+  padding: 0;
+  background-color: initial;
+}
+
+
+
+/* Lifestyle */
+
+#lifestyle{
+  background-color: #fd634e;
+}
+
+#lifestyle .lifestyle-container{
+  max-width: 1180px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#lifestyle .flex-container-lifestyle{
+  display: flex;
+  font-family: 'Open Sans',sans-serif;
+  color: #fff;
+  line-height: normal;
+}
+
+#lifestyle .lifestyle-items:nth-child(2){
+  position: relative;
+}
+
+#lifestyle .lifestyle-items img{
+  display: block;
+}
+
+#lifestyle .lifestyle-items:nth-child(2) p:nth-child(2){
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+#lifestyle .lifestyle-items:nth-child(2) p:nth-child(3){
+  position: absolute;
+  top: 60px;
+  right: 90px;
+}
+
+#lifestyle .lifestyle-items:nth-child(2) span{
+  position: absolute;
+  top: 60px;
+  right: 60px; 
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items{
+  flex-basis: 34%;
+  background-color: #fff;
+  padding: 60px 30px 70px 40px;
+  line-height: 24px;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .life-items-container, #lifestyle .flex-container-lifestyle:nth-child(4) .life-items-container, #lifestyle .flex-container-lifestyle:nth-child(4) .life-items-container:nth-child(2){
+  display: flex;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .life-items-container .lifestyle-items-content{
+  flex-grow: 53;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .life-items-container .lifestyle-items-content:nth-child(2){
+  flex-grow: 1;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items h3, #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items h3{
+  margin-bottom: 8px;
+  color: #fd634e;
+  line-height: normal;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items:nth-child(2) .lifestyle-items-content h3{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items h4, #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items h4{
+  margin-bottom: 22px;
+  font-size: 29px;
+  font-weight: 300;
+  color: #a2ca28;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items p, #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items p{
+  margin-top: 15px;
+  color: #656e74;
+  font-size: 14px;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items:nth-child(2){
+  flex-basis: 66.4%;
+  background-color: #a2ca28;
+  box-shadow: 0 0 19px -4px #000;
+  -webkit-box-shadow: 0 0 19px -4px #000;
+  -moz-box-shadow: 0 0 19px -4px #000;
+  clip-path: inset(-1px -25px 0px -25px);
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items:nth-child(2) h4{
+  font-size: 40px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  line-height: normal;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items:nth-child(2) p{
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  color: #fff;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items{
+  flex-basis: 66%;
+  background-color: #fff;
+  padding: 60px 30px 70px 40px;
+  line-height: 24px;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items:nth-child(2){
+  flex-basis: 34%;
+  background-color: #a2ca28;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items-content{
+  flex-grow: 1;
+} 
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items-content:nth-child(2){
+  flex-grow: inherit;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items-content:nth-child(2) img{
+  width: inherit;
+}
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items:nth-child(2) .lifestyle-items-content h4{
+  color: #fff;
+} 
+
+#lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items:nth-child(2) p{
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  color: #fff;
+}
+
+
+
+/* Ideas */
+
+#ideas{
+  background: url(../images/runner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#fd634e;
+  height: 100vh;
+  background-attachment: scroll;
+  position: relative;
+  overflow: hidden;
+}
+
+#ideas .ideas-container{
+  padding: 0 20px;
+  text-align: center;
+  line-height: normal;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#ideas h5{
+  padding-top: 423px;
+  font-size: 45px;
+}
+
+#ideas p{
+  max-width: 458px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#ideas .ideas-container .chevron-shape-container{
+  width: 100%;
+  height: 117px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#ideas .ideas-container #chevron-shape {
+  position: absolute;
+  bottom: 29px;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 85px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+#ideas .ideas-container #chevron-shape:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  transform: skew(0deg, 3deg);
+}
+#ideas .ideas-container #chevron-shape:after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 0;
+  height: 100vh;
+  width: 88%;
+  background: #000;
+  transform: skew(0deg, -4deg);
+  max-width: 100%;
+}
+
+#ideas .ideas-container #chevron-shape-2{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 31px 0 1vh 79vw;
+  border-color: transparent transparent transparent #fd634e;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  -ms-transform: rotate(20deg);
+  transform: rotate(0deg);
+}
+
+
+footer .footer-info-container{
+  background-color: #000;
+}
+
+footer .flex-container-footer{
+  display: flex;
+  padding-top: 65px;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+}
+
+footer .flex-container-footer:nth-child(2){
+  padding-left: 200px;
+}
+
+footer .flex-container-footer .footer-items{
+  flex-basis: 21%;
+  margin: 0 25px;
+}
+
+footer .flex-container-footer .footer-items:nth-child(2){
+  flex-basis: 24%;
+}
+
+footer .flex-container-footer .footer-items:nth-child(3){
+  flex-basis: 20%;
+}
+
+footer .flex-container-footer .footer-items h6{
+  font-size: 15px;
+  color: #fff;
+}
+
+footer .flex-container-footer .footer-items p{
+  color: #8297a7;
+  margin-top: 20px;
+}
+
+footer .flex-container-footer .footer-items:nth-child(3) span img{
+  margin-top: 20px;
+}
+
+footer .flex-container-footer .footer-items:nth-child(3) span img{
+  padding-right: 10px;
+}
+
+footer .flex-container-footer:nth-child(2) input:first-child{
+  margin-right: 3px;
+  padding-left: 20px;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+footer .flex-container-footer:nth-child(2) input:nth-child(2){
+  margin-right: 3px;
+  padding-left: 20px;
+  height: 50px;
+  width: 340px;
+  border-radius: 5px;
+}
+
+footer .flex-container-footer:nth-child(2) button{
+  width: 182px;
+  border-radius: 5px;
+  padding-left: 20px;
+  height: 50px;
+  text-align: left;
+  background-color: #a2ca28;
+  color: #fff;
+}
+
 
 
 
@@ -375,6 +737,9 @@ header #fitness-header #fitness-header-slash-red{
 /* Responsive Layout */
 
 @media only screen and (max-width: 1190px) {
+
+  /* Services */
+
   #services .flex-container-services {
     flex-wrap: wrap;
   }
@@ -390,18 +755,48 @@ header #fitness-header #fitness-header-slash-red{
 
   #services .flex-container-services-info{
     flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  #services .flex-container-services-info:nth-child(3) .fitness-service{
+    order: 1;
   }
   
-  #services .flex-container-services-info .fitness-first, #services .flex-container-services-info .fitness-first-img{
+  #services .flex-container-services-info:nth-child(3) .fitness-service-img{
+    order: 2;
+  }
+  
+  #services .flex-container-services-info .fitness-service, #services .flex-container-services-info .fitness-service-img, #lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items, #lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items:nth-child(2), #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items, #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items:nth-child(2){
     flex-basis: 100%;
   }
 
-  #services .flex-container-services-info .fitness-first-img img:first-child{
+  #services .flex-container-services-info .fitness-service-img img:first-child{
     width: 100%;
     height: auto;
   }
 
+  /* Lifestyle */
+
+  #lifestyle .flex-container-lifestyle{
+    flex-wrap: wrap;
+  }
+
+  #lifestyle .lifestyle-items{
+    flex-basis: 100%;
+  }
+
+  #lifestyle .lifestyle-items img{
+    width: 100%;
+  }
   
+}
+
+@media only screen and (max-width: 900px) {
+
+  footer .flex-container-footer{
+    flex-wrap: wrap;
+    display: inherit;
+  }
 }
 
 @media only screen and (min-width: 865px) {
@@ -448,3 +843,22 @@ header #fitness-header #fitness-header-slash-red{
   }
 }
 
+@media only screen and (max-width: 440px) {
+  #lifestyle .lifestyle-items:nth-child(2) p:nth-child(2){
+    position: absolute;
+    top: 60px;
+    left: 7px;
+  }
+  
+  #lifestyle .lifestyle-items:nth-child(2) p:nth-child(3){
+    position: absolute;
+    top: 60px;
+    right: 36px;
+  }
+  
+  #lifestyle .lifestyle-items:nth-child(2) span{
+    position: absolute;
+    top: 60px;
+    right: 7px; 
+  }
+}
