@@ -529,6 +529,7 @@ Lifestyle Section
   font-size: 29px;
   font-weight: 300;
   color: #a2ca28;
+  line-height: normal;
 }
 
 #lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items p, #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items p{
@@ -704,7 +705,7 @@ Footer Section
 
 footer{
   position: relative;
-  height: 32vh;
+  height: 420px;
   background-color: #000;
 }
 
@@ -723,6 +724,7 @@ footer .footer-items{
 }
 
 footer .footer-items h6{
+  margin-top: 20px;
   font-size: 15px;
 }
 
@@ -748,7 +750,7 @@ footer .contact-info .footer-items:nth-child(2){
 
 footer .contact-info .footer-items:nth-child(3){
   position: absolute;
-  top: 220px;
+  top: 245px;
 } 
 
 footer .contact-info .footer-items:nth-child(2) span img{
@@ -775,6 +777,7 @@ footer .footer-items input:first-child{
   height: 50px;
   width: 200px;
   border-radius: 5px;
+  border: inherit;
 }
 
 footer .footer-items input:nth-child(2){
@@ -783,6 +786,7 @@ footer .footer-items input:nth-child(2){
   height: 50px;
   width: 340px;
   border-radius: 5px;
+  border: inherit;
 }
 
 footer .footer-items button{
@@ -792,13 +796,13 @@ footer .footer-items button{
   text-align: center;
   background-color: #a2ca28;
   color: #fff;
+  border: #a2ca28;
 }
 
 footer .footer-items button:hover{
   background-color: #fd634e;
   cursor: pointer;
 }
- 
 
 /*
 #######################################################
