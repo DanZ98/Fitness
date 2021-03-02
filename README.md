@@ -1,4 +1,4 @@
-# Eclipse Landing Page Project
+# Fitness Landing Page Project
 
 A responsive static landing page built in HTML5 and CSS3 Flexbox
 
