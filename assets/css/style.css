@@ -1,5 +1,27 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
+/* Custom Fonts */
+@font-face {
+    font-family: NunitoFontMedium;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoFontLight;
+    src: url(../fonts/Nunito-Light.ttf);
+}
+
+@font-face {
+    font-family: NunitoFontSemiBold;
+    src: url(../fonts/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: ProximaNovaFont;
+    src: url(../fonts/Proxima-Nova-Font.otf);
+}
 
 /*
 #######################################################
@@ -14,6 +36,8 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 *, *:before, *:after {
@@ -63,7 +87,7 @@ header #fitness-header{
   bottom: 220px;
   left: 115px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: NunitoFontMedium;
   font-size: 40px;
   font-weight: 300;
 }
@@ -107,7 +131,7 @@ Navigation
 
 .nav-container .logo .logo-fitness{
   vertical-align: top;
-  font-family: 'Roboto', sans-serif;
+  font-family: NunitoFontSemiBold;
   color: #fff;
   font-weight: 500;
   font-size: 24px;
@@ -127,7 +151,7 @@ Navigation
 
 .nav-container .nav-items{
   float: right;
-  margin: 20px 35px 0 0;
+  margin: 8px 35px 0 0;
 }
 
 .nav-items nav ul{
@@ -139,7 +163,7 @@ Navigation
 
 .nav-items nav ul li{
   margin: 0 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: NunitoFontMedium;
   cursor: pointer;
   color: #fff;
   font-size: 13px;
@@ -298,12 +322,18 @@ Services Section
   flex: 0 37%;
   padding-right: 40px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
 #services .service-items:nth-child(4){
   padding-right: 0px;
+}
+
+#services .flex-container-services-info h3, #lifestyle, .lifestyle-items-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 #services .service-items img{
@@ -335,6 +365,7 @@ Services Section
   display: inline-block;
   text-decoration: none;
   color: #fff;
+  font-size: 14px;
 }
 
 #services .service-items a:hover{
@@ -362,17 +393,17 @@ Services Section
 }
 
 #services .flex-container-services-info .fitness-service h3{
-  margin-bottom: 8px;
   color: #fd634e;
   line-height: normal;
 }
 
 #services .flex-container-services-info .fitness-service h4{
   margin-bottom: 22px;
-  font-size: 29px;
+  font-size: 35px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #a2ca28;
+  line-height: normal;
 }
 
 #services .flex-container-services-info .fitness-service p{
@@ -404,6 +435,7 @@ Services Section
   bottom: 45px;
   right: 75px;
   color: #fd634e;
+  font-size: 12px;
 }
 
 #services .flex-container-services-info:nth-child(3) .fitness-service-img img:nth-child(3){
@@ -476,6 +508,11 @@ Lifestyle Section
   display: block;
 }
 
+#lifestyle .lifestyle-items p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
 #lifestyle .lifestyle-items:nth-child(2) p:nth-child(2){
   position: absolute;
   top: 60px;
@@ -514,14 +551,14 @@ Lifestyle Section
 }
 
 #lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items h3, #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items h3{
-  margin-bottom: 8px;
   color: #fd634e;
   line-height: normal;
 }
 
 #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items:nth-child(2) .lifestyle-items-content h3{
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
 }
 
 #lifestyle .flex-container-lifestyle:nth-child(2) .lifestyle-items h4, #lifestyle .flex-container-lifestyle:nth-child(4) .lifestyle-items h4{
@@ -627,7 +664,7 @@ Ideas Section
 }
 
 #ideas h5{
-  padding-top: 423px;
+  padding-top: 295px;
   font-size: 45px;
 }
 
